@@ -1,0 +1,63 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c44);
+    color: #f0f0f0;
+  }
+  header {
+     background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  section {
+    width: 40%; 
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  .product,
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.2s ease;
+  } 
+  .product:hover,
+  .cart-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  button {
+    padding: 0.5rem 1rem;  
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  } 
+  button:hover {  
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    transform: translateY(-2px);
+  }
+  
